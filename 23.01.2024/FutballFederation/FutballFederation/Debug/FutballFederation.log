@@ -1,0 +1,8 @@
+﻿  FutballFederation.cpp
+D:\kurs\Prisustveni\23.01.2024\FutballFederation\FutballFederation\Round.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Schedule.cpp
+D:\kurs\Prisustveni\23.01.2024\FutballFederation\FutballFederation\Round.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\kurs\Prisustveni\23.01.2024\FutballFederation\FutballFederation\Schedule.cpp(9,20): warning C4018: '<': signed/unsigned mismatch
+D:\kurs\Prisustveni\23.01.2024\FutballFederation\FutballFederation\Schedule.cpp(20,20): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  FutballFederation.vcxproj -> D:\kurs\Prisustveni\23.01.2024\FutballFederation\Debug\FutballFederation.exe

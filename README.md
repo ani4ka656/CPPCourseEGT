@@ -1,1 +1,1 @@
-# CourseC-
+# CppCourseEGT

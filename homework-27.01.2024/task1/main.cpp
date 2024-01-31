@@ -45,6 +45,7 @@ int main()
    //cout << "newDate is " << newDate-- << endl;
    //cout << "newDate is " << newDate-- << endl;
    cout << "newDate is " << --newDate << endl;
+   cout << "newDate is " << newDate-- << endl;
    cout << "newDate is " << newDate << endl;
    return 0;
 } // end main

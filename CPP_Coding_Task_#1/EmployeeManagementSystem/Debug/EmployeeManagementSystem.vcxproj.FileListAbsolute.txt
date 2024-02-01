@@ -1,0 +1,2 @@
+C:\Users\Ani\source\repos\EmployeeManagementSystem\Debug\EmployeeManagementSystem.exe
+D:\kurs\Prisustveni\Repo\CourseCpp\CPP_Coding_Task_#1\EmployeeManagementSystem\Debug\EmployeeManagementSystem.exe

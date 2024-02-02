@@ -17,7 +17,7 @@ double Alcoholic::getTax() const{
     return this->tax;
 }
 double Alcoholic::calculatePrice(){
-    return Drinks::calculatePrice() * getTax();
+    return Drinks::calculatePrice() * getTax() + Drinks::calculatePrice();
 }
 void Alcoholic::print(){
     Drinks::print();

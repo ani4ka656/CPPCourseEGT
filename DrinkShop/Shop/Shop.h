@@ -10,6 +10,8 @@ class Shop
         void addUsers(User);
         void findNumberDrinks();
         void findCeritainDrink(string);
+        void findUserWithLargestOrder();
+        void findTenUsers(string, double);
 
     private:
 

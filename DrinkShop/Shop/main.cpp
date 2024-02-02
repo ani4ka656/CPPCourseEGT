@@ -58,6 +58,8 @@ int main()
     s.addUsers(customer2);
     s.findNumberDrinks();
     s.findCeritainDrink("Lavatzza");
+    s.findUserWithLargestOrder();
+    s.findTenUsers("Camomile", 1.5);
     delete al;
     delete cf;
     return 0;

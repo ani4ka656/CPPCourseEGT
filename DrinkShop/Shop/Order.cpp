@@ -9,6 +9,7 @@ Order::Order(string date, double sum) : date(date)
 void Order::addDrink(Drinks* d)
 {
     this->dr.push_back(d);
+    calculateSum();
     //dr.push_back(d->clone());
 }
 

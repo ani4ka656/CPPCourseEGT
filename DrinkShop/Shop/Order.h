@@ -16,7 +16,7 @@ class Order
         string getDate() const;
         int getNumber() const;
         void print();
-       void calculateSum();
+        void calculateSum();
         double getSum();
         vector <Drinks*> getDrinks();
     private:

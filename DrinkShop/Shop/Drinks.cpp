@@ -37,6 +37,8 @@ void Drinks::print(){
 
 
 int Drinks::updateQuantity(int newQ){
+  /*  cout << newQ << endl
+        << this->quantity << endl ;*/
     return this->quantity += newQ;
 }
 

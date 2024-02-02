@@ -28,6 +28,7 @@ int main()
     User customer2("Maria");
     Drinks *al = new Alcoholic("JW",20.5, 2, "whiskey", 40, 0.2);
     Drinks *cf = new NoAlcoholic("Lavatzza",1.5, 2, "coffee", 0.2, 0.2);
+    Drinks *tea = new NoAlcoholic("Camomile",1.2, 1, "tea", 0.4, 0.2);
     vector<Drinks*> myDrinks;
     myDrinks.push_back(al);
     myDrinks.push_back(cf);
@@ -44,11 +45,9 @@ int main()
 
       }*/
     order1.addDrink(al);
-   order1.addDrink(cf);
-  //  order2.addDrink(cf);
-    order2.addDrink(cf);
+    order1.addDrink(cf);
+    order2.addDrink(tea);
     // order1.print();
-    // order2.print();
     customer1.addOrder(order1);
     customer2.addOrder(order1);
     customer2.addOrder(order2);
@@ -58,6 +57,9 @@ int main()
     s.addUsers(customer1);
     s.addUsers(customer2);
     s.findNumberDrinks();
+    s.findCeritainDrink("Lavatzza");
+    delete al;
+    delete cf;
     return 0;
 
 }

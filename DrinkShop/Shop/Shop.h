@@ -9,6 +9,7 @@ class Shop
     public:
         void addUsers(User);
         void findNumberDrinks();
+        void findCeritainDrink(string);
 
     private:
 

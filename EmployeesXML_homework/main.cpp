@@ -46,7 +46,6 @@ vector<EmployeeWithWorkstation> fromXMLToEmployeeWithWorkstation(const char* fil
 	}
 	else {
 		xml_node empls = doc.child("EmployeesData").child("Employees");
-		int counter = 0;
 		for (xml_node_iterator it = empls.begin(); it != empls.end(); ++it)
 		{
 			int i = 1;
@@ -62,10 +61,21 @@ vector<EmployeeWithWorkstation> fromXMLToEmployeeWithWorkstation(const char* fil
 				i++;
 				//employees[i].push_back;
 			}
-			building = it->first_child().attribute("Building").value();
-			floor = it->first_child().attribute("Floor").value();
-			desc = it->first_child().attribute("Desc").value();
+			int counter = 1;
+			for (xml_attribute_iterator ait = it->first_child().attributes_begin(); ait != it->first_child().attributes_end(); ++ait) {
+				if (counter == 1)
+					building = ait->value();
+				if (counter == 2)
+					floor = ait->value();
+				if (counter == 3)
+					desc = ait->value();
+				counter++;
+			/*	building = it->first_child().attribute("Building").value();
+				floor = it->first_child().attribute("Floor").value();
+				desc = it->first_child().attribute("Desc").value();*/
 
+			}
+			
 			
 			employees.push_back(EmployeeWithWorkstation (name, type, age, building, floor, desc));
 		}

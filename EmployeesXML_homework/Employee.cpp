@@ -31,8 +31,8 @@ string Employee::getAge() const
 }
 void Employee::print() const
 {
-    cout << "Name = " << getName() 
-        << "Type = " << getType()
-        << "Age = " << getAge() << endl;
+    cout << "Name = " << getName() << "    "
+         << "Type = " << getType() << "    "
+         << "Age = " << getAge() << endl;
 
 }

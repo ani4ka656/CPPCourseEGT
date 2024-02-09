@@ -61,8 +61,9 @@ vector<EmployeeWithWorkstation> fromXMLToEmployeeWithWorkstation(const char* fil
 				i++;
 				//employees[i].push_back;
 			}
+			xml_node work = it->child("Workstation");
 			int counter = 1;
-			for (xml_attribute_iterator ait = it->first_child().attributes_begin(); ait != it->first_child().attributes_end(); ++ait) {
+			for (xml_attribute_iterator ait = work.attributes_begin(); ait != work.attributes_end(); ++ait) {
 				if (counter == 1)
 					building = ait->value();
 				if (counter == 2)
@@ -70,10 +71,6 @@ vector<EmployeeWithWorkstation> fromXMLToEmployeeWithWorkstation(const char* fil
 				if (counter == 3)
 					desc = ait->value();
 				counter++;
-			/*	building = it->first_child().attribute("Building").value();
-				floor = it->first_child().attribute("Floor").value();
-				desc = it->first_child().attribute("Desc").value();*/
-
 			}
 			
 			

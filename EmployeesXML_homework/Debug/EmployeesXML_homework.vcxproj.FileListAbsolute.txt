@@ -1,1 +1,2 @@
 D:\kurs\Prisustveni\assignments\EmployeesXML_homework\Debug\EmployeesXML_homework.exe
+D:\kurs\Prisustveni\Repo\CourseCpp\EmployeesXML_homework\Debug\EmployeesXML_homework.exe

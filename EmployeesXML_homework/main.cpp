@@ -29,6 +29,10 @@ vector<Employee> fromXMLToEmployee(const char* fileName) {
 				i++;
 			//employees[i].push_back;
 			}
+			//or this instead the upper for
+			/*name = it->attribute("Name").value();
+			type = it->attribute("Type").value();
+			age = it->attribute("Age").value();*/
 			employees.push_back(Employee(name, type, age));
 			counter++;
 		}
@@ -50,7 +54,7 @@ vector<EmployeeWithWorkstation> fromXMLToEmployeeWithWorkstation(const char* fil
 		{
 			int i = 1;
 			string name, type, age, building, floor, desc;
-			for (xml_attribute_iterator ait = it->attributes_begin(); ait != it->attributes_end(); ++ait) //we need attribute xml itterator
+			/*for (xml_attribute_iterator ait = it->attributes_begin(); ait != it->attributes_end(); ++ait) //we need attribute xml itterator
 			{
 				if (i == 1)
 					name = ait->value();
@@ -60,7 +64,11 @@ vector<EmployeeWithWorkstation> fromXMLToEmployeeWithWorkstation(const char* fil
 					age = ait->value();
 				i++;
 				//employees[i].push_back;
-			}
+			}*/
+			//or this instead the upper for
+			name = it->attribute("Name").value();
+			type = it->attribute("Type").value();
+			age = it->attribute("Age").value();
 			xml_node work = it->child("Workstation");
 			int counter = 1;
 			for (xml_attribute_iterator ait = work.attributes_begin(); ait != work.attributes_end(); ++ait) {
@@ -70,10 +78,13 @@ vector<EmployeeWithWorkstation> fromXMLToEmployeeWithWorkstation(const char* fil
 					floor = ait->value();
 				if (counter == 3)
 					desc = ait->value();
+				
 				counter++;
 			}
-			
-			
+			//or instead the upper for
+			/*building = it->first_child().attribute("Building").value();
+			floor = it->first_child().attribute("Floor").value();
+			desc = it->first_child().attribute("Desc").value();*/
 			employees.push_back(EmployeeWithWorkstation (name, type, age, building, floor, desc));
 		}
 	}

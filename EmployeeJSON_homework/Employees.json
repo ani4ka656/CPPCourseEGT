@@ -1,0 +1,19 @@
+{
+  "Employees": [
+    {
+      "Name": "John",
+      "Type": "Part-Time",
+      "Age": "23"
+    },
+    {
+      "Name": "Sean",
+      "Type": "Full-Time",
+      "Age": "34"
+    },
+    {
+      "Name": "Sarah",
+      "Type": "Part-Time",
+      "Age": "55"
+    }
+  ]
+}

@@ -69,12 +69,6 @@ void Game::handleEvents() {
 
 void Game::update() {
 
-	/*std::cout << "SDL_TICKS          :   " << SDL_GetTicks() << "\n";
-	std::cout << "SDL_TICKS / 100	 :   " << int((SDL_GetTicks() / 100)) << "\n";
-	std::cout << "SDL_TICKS / 100 % 5:   " << int(((SDL_GetTicks() / 100) % 5)) << "\n\n";
-	currentFrame = int(((SDL_GetTicks() / 100) % 5)); //% 5 for 5 frames //if the first is greater it is even slower
-	/*if (currentFrame == 4)currentRow += 1;
-	std::cout << currentRow << "is the row" << "\n";*/
 }
 bool Game::isRunning() {
 	return Game::running;
@@ -89,9 +83,8 @@ Game::Game() {
 	Game::window = NULL;
 	Game::renderer = NULL;
 	Game::running = true;
-	Game::currentFrame = 0;
-	Game::currentRow = 1;
 }
 Game::~Game() {
-
+	delete window;
+	delete renderer;
 }

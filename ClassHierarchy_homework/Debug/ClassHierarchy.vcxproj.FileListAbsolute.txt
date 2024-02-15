@@ -1,1 +1,2 @@
 D:\kurs\Prisustveni\assignments\ClassHierarchy\Debug\ClassHierarchy.exe
+D:\kurs\Prisustveni\Repo\CourseCpp\ClassHierarchy_homework\Debug\ClassHierarchy.exe

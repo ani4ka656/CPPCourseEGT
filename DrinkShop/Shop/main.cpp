@@ -62,6 +62,7 @@ int main()
     s.findTenUsers("Camomile", 1.5);
     delete al;
     delete cf;
+    delete tea;
     return 0;
 
 }

@@ -22,11 +22,6 @@ bool Game::init(const char* title, int xpos, int ypos, int width, int height, in
 
 				// use the TextureManager to load textures
 				 TextureManager::Instance()->loadTexture("assets/pic1.jpg", "jpg", renderer);
-			
-
-			/*SDL_Surface* tempSurface = IMG_Load("assets/pic1.jpg"); //temporary variable
-				texture = SDL_CreateTextureFromSurface(renderer, tempSurface);
-				SDL_FreeSurface(tempSurface);*/
 				destRect.x = 0;
 				destRect.y = 0;
 				destRect.w = 53;
@@ -58,9 +53,6 @@ void Game::render() {
 	SDL_GetWindowSize(window, &ww, &wh);
 	destRect.y = wh / 2 - 75 / 2;
 	TextureManager::Instance()->drawTexture("jpg", destRect.x, destRect.y, 53, 75, renderer/*SDL_FLIP_NONE*/);
-	//SDL_RenderCopy(renderer, texture, NULL, &destRect); //draws on renderer with portion of the texture
-	
-
 
 	SDL_RenderPresent(renderer);
 }
@@ -100,7 +92,7 @@ void Game::update() {
 			increase += 1; //evetytime the object hits the x = 0 it increases speed
 		}
 
-		if (increase > 8 || increase < -8)
+		if (increase > 8)
 			increase = 1;
 	}
 }
@@ -120,9 +112,10 @@ Game::Game() {
 	Game::window = NULL;
 	Game::renderer = NULL;
 	Game::running = true;
-	Game::texture = NULL;
 	Game::destRect = { 0, 0, 0, 0 };
 	Game::flip = true;
 }
 Game::~Game() {
+	delete window;
+	delete renderer;
 }

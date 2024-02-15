@@ -1,1 +1,2 @@
 D:\kurs\Prisustveni\assignments\SDL_homeworkTasks\SDL_PentagonAndHexagon\x64\Debug\SDL_PentagonAndHexagon.exe
+D:\kurs\Prisustveni\Repo\CourseCpp\SDL_homeworkTasks\SDL_PentagonAndHexagon\x64\Debug\SDL_PentagonAndHexagon.exe

@@ -1,1 +1,2 @@
 D:\kurs\Prisustveni\assignments\SDL_LeftToRight_task\SDL_LeftToRight\x64\Debug\SDL_LeftToRight.exe
+D:\kurs\Prisustveni\Repo\CourseCpp\SDL_homeworkTasks\SDL_LeftToRight\x64\Debug\SDL_LeftToRight.exe

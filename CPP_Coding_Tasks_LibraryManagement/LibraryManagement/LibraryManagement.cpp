@@ -21,6 +21,5 @@ int main()
     Book* borrowed = &books[0];
     
     members[1].borrowBook(borrowed);
-
     return 0;
 }

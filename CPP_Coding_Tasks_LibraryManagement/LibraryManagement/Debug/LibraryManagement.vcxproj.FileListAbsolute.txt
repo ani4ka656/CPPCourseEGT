@@ -1,2 +1,3 @@
 C:\Users\Ani\source\repos\LibraryManagement\Debug\LibraryManagement.exe
 D:\kurs\Prisustveni\LibraryManagement\Debug\LibraryManagement.exe
+D:\kurs\Prisustveni\Repo\CourseCpp\CPP_Coding_Tasks_LibraryManagement\LibraryManagement\Debug\LibraryManagement.exe

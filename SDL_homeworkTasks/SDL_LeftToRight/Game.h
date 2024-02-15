@@ -15,11 +15,8 @@ public:
 private:
 	SDL_Window* window = NULL;
 	SDL_Renderer* renderer = NULL;
-	bool running;
-	SDL_Texture* texture; 
+	bool running; 
 	SDL_Rect destRect;
 	static int increase; 
 	bool flip;
-/*	static int x;
-	static int y;*/
 };

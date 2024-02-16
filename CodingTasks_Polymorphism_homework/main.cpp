@@ -2,7 +2,7 @@
 #include "Circle.h"
 #include <vector>
 void printArea(Shape* shape){
-	shape->area();
+	cout << "Area of the shape is: " << shape->area() << endl;
 }
 int main() {
 	Shape* rec = new Rectangle("red", 3, 4);

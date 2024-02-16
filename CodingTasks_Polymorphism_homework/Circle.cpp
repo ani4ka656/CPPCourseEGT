@@ -18,7 +18,7 @@ void Circle::draw() const
     cout << "Drawing a " << Shape::color /*or only color*/ << " circle";
 }
 
-void Circle::area() const
+double Circle::area() const
 {
-    cout << "Area of the circle is: " << getRadius() * getRadius() * 3.14 << endl;
+   return getRadius() * getRadius() * 3.14;
 }

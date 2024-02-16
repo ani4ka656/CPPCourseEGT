@@ -8,7 +8,7 @@ public:
 	Shape(string);
 	string getColor() const;
 	virtual void draw() const;
-	virtual void printArea() const = 0;
+	virtual void area() const = 0;
 	virtual ~Shape(){}
 
 

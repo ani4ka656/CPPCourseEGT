@@ -12,7 +12,7 @@ double Rectangle::getHeight() const
     return this->height;
 }
 
-void Rectangle::printArea() const
+void Rectangle::area() const
 {
     cout << "Area of the rectangle is: " << getWidth() * getHeight() << endl;
 }

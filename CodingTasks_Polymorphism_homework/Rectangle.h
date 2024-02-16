@@ -6,7 +6,7 @@ public:
 	Rectangle(string, double, double);
 	double getWidth() const;
 	double getHeight() const;
-	void printArea() const override;
+	void area() const override;
 	virtual void draw() const;
 
 private:

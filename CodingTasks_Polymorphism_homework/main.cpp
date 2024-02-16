@@ -1,6 +1,9 @@
 #include "Rectangle.h"
 #include "Circle.h"
 #include <vector>
+void printArea(Shape* shape){
+	shape->area();
+}
 int main() {
 	Shape* rec = new Rectangle("red", 3, 4);
 	Shape* cir = new Circle("blue", 6);
@@ -16,9 +19,7 @@ int main() {
 	cout << endl << endl;
 	for (int i = 0; i < shapes.size(); i++)
 	{
-		cout << "Shape: " << i + 1 << endl;
-		shapes[i]->printArea();
-		cout << endl;
+		printArea(shapes[i]);
 	}
 	shapes.clear();
 	delete rec;

@@ -14,7 +14,6 @@ public:
 
 protected:
 	string color;
-	double radius;
 	
 };
 

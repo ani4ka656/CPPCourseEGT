@@ -10,7 +10,6 @@ public:
 	virtual void draw() const;
 	virtual ~Shape(){}
 
-
 protected:
 	string color;
 	

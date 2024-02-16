@@ -21,6 +21,6 @@ void Rectangle::draw() const
 {
     /*it has two possible ways
     Shape::draw();
-    cout << " " << getName() << endl;*/
+    cout << " " << " rectangle" << endl;*/
     cout << "Drawing a " << Shape::color /*or only color*/ << " rectangle";
 }

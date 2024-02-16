@@ -1,9 +1,6 @@
 #include "Circle.h"
 
-Circle::Circle(string color_, double radius_) : Shape(color_), radius(radius_)
-{
-}
-
+Circle::Circle(string color_, double radius_) : Shape(color_), radius(radius_){}
 
 double Circle::getRadius() const
 {

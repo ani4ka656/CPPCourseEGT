@@ -3,11 +3,8 @@
 class Rectangle : public Shape
 {
 public:
-	Rectangle(string, string = "Rectangle");
-	string getName() const;
+	Rectangle(string);
 	virtual void draw() const;
 
-private:
-	string name;
 };
 

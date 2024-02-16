@@ -1,1 +1,2 @@
 D:\kurs\Prisustveni\assignments\CodingTasks_Inheritance_homework\Debug\CodingTasks_Inheritance_homework.exe
+D:\kurs\Prisustveni\Repo\CourseCpp\CodingTasks_Inheritance_homework\Debug\CodingTasks_Inheritance_homework.exe

@@ -6,8 +6,8 @@ public:
 	Rectangle(string, double, double);
 	double getWidth() const;
 	double getHeight() const;
-	double area() const override;
 	virtual void draw() const;
+	virtual double area() const;
 
 private:
 	double width;

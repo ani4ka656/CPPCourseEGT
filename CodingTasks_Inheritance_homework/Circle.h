@@ -3,11 +3,7 @@
 class Circle : public Shape
 {
 public:
-	Circle(string, string = "Circle");
-	string getName() const;
+	Circle(string);
 	virtual void draw() const;
-
-private:
-	string name;
 };
 

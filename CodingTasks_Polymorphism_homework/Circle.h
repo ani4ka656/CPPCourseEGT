@@ -6,7 +6,7 @@ public:
 	Circle(string, double);
 	double getRadius() const;
 	virtual void draw() const;
-	double area() const override;
+	virtual double area() const;
 
 private:
 	double radius;
